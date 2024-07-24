@@ -6,18 +6,19 @@ plugins {
 }
 
 dependencies {
-    // implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.springframework.boot:spring-boot-starter-webflux")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("io.projectreactor:reactor-test")
-    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-    implementation("org.apache.commons:commons-text")
+    // implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.3.2")
+    implementation("org.springframework.boot:spring-boot-starter-web:3.3.2")
+    implementation("org.springframework.boot:spring-boot-starter-webflux:3.3.2")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.17.2")
+    implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:1.2.2")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:2.0.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.8.1")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:3.3.2")
+    testImplementation("io.projectreactor:reactor-test:3.6.8")
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:2.0.0")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.10.3")
+    implementation("org.apache.commons:commons-text:1.12.0")
     implementation(project(":utilities"))
 }
 
